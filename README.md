@@ -28,14 +28,7 @@ service-a:
 
 Make sure wherever this is running (Jenkins or whatever) has access to the Github repo, so maybe make a bot user and invite it.
 
-That's it.
-
-## TODO
-
-- [ ] Sync to Postman (make Postman collections read-only mirrors of these docs)
-- [ ] Add build-status icons to show how accurate they are with Jenkins + Dredd
-- [ ] Look into [Request Body based examples](https://github.com/OAI/OpenAPI-Specification/blob/OpenAPI.next/versions/3.0.md#requestBodyObject)
-- [ ] Use JSON Schema as a base
+That's it. Shove the whole thing up on hosting somewhere and build from `public/` and you're done. Or S3 the HTML whatever. This built in ruby server is not going to last very long so don't use that.
 
 ## Run Locally
 
