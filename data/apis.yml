@@ -1,0 +1,14 @@
+
+petstore:
+  name: Pet Store
+  repo: "git@github.com:OAI/OpenAPI-Specification.git"
+  branch: master
+  spec_dir: examples/v2.0/yaml/
+  entry_file: petstore-expanded.yaml
+
+uber:
+  name: Uber
+  repo: "git@github.com:OAI/OpenAPI-Specification.git"
+  branch: master
+  spec_dir: examples/v2.0/yaml/
+  entry_file: uber.yaml

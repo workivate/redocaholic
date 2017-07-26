@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>API Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/poole.css">
+    <link rel="stylesheet" href="/css/hyde.css">
+  </head>
+
+  <body>
+
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1>API Docs</h1>
+          <p class="lead">Want to know how an API endpoint works? What data does it expect, in what format? WE HAVE THE ANSWERS!</p>
+        </div>
+
+        <ul class="sidebar-nav">
+          
+            <li class="sidebar-nav-item active">
+              <a href="/petstore.html">Pet Store</a>
+            </li>
+          
+            <li class="sidebar-nav-item active">
+              <a href="/uber.html">Uber</a>
+            </li>
+          
+          <li>---------------</li>
+
+          <li class="sidebar-nav-item">
+            <a href="https://github.com/WeConnect/apis#adding-a-repo">Contribute</a>
+          </li>
+        </ul>
+
+        <p>© Acme Corp. 2017</p>
+      </div>
+    </div>
+
+
+    <div class="content container">
+      <div class="posts">
+
+        <div class="post">
+          <h1 class="post-title">
+            API Documentation and Specification!
+          </h1>
+
+          <p>Put whatever introductions here!</p>
+
+          <ul class="sidebar-nav">
+            
+              <li class="sidebar-nav-item active">
+                <a href="/petstore.html">Pet Store</a>
+              </li>
+            
+              <li class="sidebar-nav-item active">
+                <a href="/uber.html">Uber</a>
+              </li>
+            
+          </ul>
+
+
+          <h2>Best Practices</h2>
+
+          <p>How you make your Open API file is up to you, so long as there is an entry point, in a special folder dedicated to documentation/specification. This entire folder is going to be copied into the <code>public/</code> directory, so <strong>do not use <code>spec_dir: /</code> unless you want your source code to be public!</strong>
+
+          <p>Other than that, here is some general advice.</p>
+
+          <ol>
+            <li>Use Open API v2.0, not v3.0 (yet)</li>
+            <li>Add a <a href="https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md#logo-object">x-logo object</a> because it looks nice</li>
+            <li>Split the definitions into their own `docs/definitions/foos.yml` files and use $ref.</li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

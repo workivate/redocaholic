@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @name %> Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        padding-top: 40px;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+      }
+      #links_container {
+          margin: 0;
+          padding: 0;
+          background-color: #202020;
+      }
+
+      #links_container li {
+        display: inline-block;
+        padding: 10px;
+
+      }
+      #links_container li.home {
+        font-weight: bold;
+      }
+      #links_container li a {
+        color: white;
+        font-family: "PT Sans", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Top navigation placeholder -->
+    <nav>
+      <ul id="links_container">
+        <li class="home"><a href="/">Home</a></li>
+        <% @apis.each do |nickname,api| %>
+          <li><a href="/<%= nickname %>.html"><%= api['name'] %></a></li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <redoc spec-url="<%= @spec %>"></redoc>
+
+    <script src="node_modules/redoc/dist/redoc.min.js"> </script>
+
+  </body>
+</html>
