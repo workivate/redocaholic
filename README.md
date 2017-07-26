@@ -10,7 +10,7 @@ Each repository will have a folder that contains all of the Open API specificati
 
 - `rake` will clone all of the repos, copy out the specification folder, then generate a `public/index.html` with a list of APIs in it
 - `rake build` will skip cloning and just build HTML out again
-- `rake serve` will server HTML on `[localhost:8000](http://localhost:8000)`
+- `rake serve` will server HTML on [`localhost:8000`](http://localhost:8000)
 
 
 ## Adding a Repo
