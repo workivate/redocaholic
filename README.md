@@ -12,7 +12,6 @@ Each repository will have a folder that contains all of the Open API specificati
 - `rake build` will skip cloning and just build HTML out again
 - `rake serve` will server HTML on [`localhost:8000`](http://localhost:8000)
 
-
 ## Adding a Repo
 
 The file `data/apis.yml` keeps track of all the Open API specification files, and a new repository might look like this:
@@ -29,17 +28,6 @@ service-a:
 Make sure wherever this is running (Jenkins or whatever) has access to the Github repo, so maybe make a bot user and invite it.
 
 That's it. Shove the whole thing up on hosting somewhere and build from `public/` and you're done. Or S3 the HTML whatever. This built in ruby server is not going to last very long so don't use that.
-
-## Run Locally
-
-``` shell
-# Clone, build, etc
-rake
-# Run the server
-rake serve
-```
-
-Open up [`http://localhost:8000`](http://localhost:8000/) in your favourite browser.
 
 ## "What about Postman?"
 
